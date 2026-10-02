@@ -1,8 +1,14 @@
 # Python
 __pycache__/
 *.py[cod]
+*.py[codz]
+*.class
+
+# Virtual environments
 .venv/
 venv/
+env/
+ENV/
 
 # Environment variables / API keys
 .env
@@ -13,7 +19,29 @@ venv/
 .vscode/
 .idea/
 
-# Build files
+# Build / distribution
 build/
 dist/
 *.egg-info/
+*.egg
+wheels/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checking / linting
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tempCodeRunnerFile.py
